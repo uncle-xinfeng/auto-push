@@ -1,0 +1,24 @@
+{
+# 公众号配置
+# 公众号appId
+"app_id": "wx5f5bbafaa93e201b",
+# 公众号appSecret
+"app_secret": "0b474617267dacd08409ab049113a9e2",
+# 模板消息id
+"template_id": "ALDLv1MsV_PRs3B9f_NDUYKMtb3hEyYkiGtjhqBve_c",
+# 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如["wx1", "wx2"]
+"user": ["o7S6g6c6l5NXVv_4UW95QliLYxpY"],
+
+# 信息配置
+# 所在省份
+"province": "山西",
+# 所在城市
+"city": "吕梁",
+# 生日1，修改名字为对应需要显示的名字，如果生日为农历，在最前面加上r即可
+"birthday": {"name": "张萱", "birthday": "2002-09-20"},
+# 生日2
+#"birthday2": {"name": "宝贝", "birthday": "2002-09-20"},
+# 在一起的日子，格式同上
+"love_date": "2023-06-18"
+}
+# https://api.shadiao.pro/chp   彩虹屁

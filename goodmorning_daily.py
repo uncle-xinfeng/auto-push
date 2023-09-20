@@ -107,7 +107,8 @@ def get_ciba():
     }
     r = get(url, headers=headers)
     # note_en = r.json()["content"]
-    note_ch = r.json()["data"].get("text")
+    data = r.json()["data"]
+    note_ch = data.get("text")
     return note_ch
 
 

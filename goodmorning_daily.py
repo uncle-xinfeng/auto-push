@@ -98,16 +98,17 @@ def get_birthday(birthday, year, today):
 
 
 def get_ciba():
-    url = "http://open.iciba.com/dsapi/"
+    # url = "http://open.iciba.com/dsapi/"
+    url = "https://api.shadiao.pro/chp"
     headers = {
         'Content-Type': 'application/json',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
                       'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
     }
     r = get(url, headers=headers)
-    note_en = r.json()["content"]
-    note_ch = r.json()["note"]
-    return note_ch, note_en
+    # note_en = r.json()["content"]
+    note_ch = r.json()["data"].get("text")
+    return note_ch
 
 
 def send_message(to_user, access_token, city_name, weather, max_temperature, min_temperature, note_ch, note_en):
@@ -221,6 +222,6 @@ if __name__ == "__main__":
     note_ch, note_en = get_ciba()
     # 公众号推送消息
     for user in users:
-        send_message(user, accessToken, city, weather, max_temperature, min_temperature, note_ch, note_en)
+        send_message(user, accessToken, city, weather, max_temperature, min_temperature, note_ch)
     # os.system("pause")
 

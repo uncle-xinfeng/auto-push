@@ -22,6 +22,6 @@
 # 生日2
 #"birthday2": {"name": "宝贝", "birthday": "2002-09-20"},
 # 在一起的日子，格式同上
-# "love_date": "2023-06-28"
+"love_date": "2023-06-28"
 }
 # https://api.shadiao.pro/chp   彩虹屁
